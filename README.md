@@ -1,4 +1,4 @@
-# 🏦 Loan Approval Prediction with ML & Streamlit
+# 🏦 Loan Approval Prediction with ML
 
 This project uses a machine learning pipeline to predict whether a loan application will be approved based on applicant details. It includes EDA, feature engineering, model training using a Random Forest classifier, and predictions on unseen test data.
 
