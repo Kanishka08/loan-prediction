@@ -1,6 +1,6 @@
 # 🏦 Loan Approval Prediction with ML & Streamlit
 
-This project predicts whether a loan application will be approved using machine learning, EDA, and an interactive Streamlit web app. It simulates the decision-making process of a loan officer and can support financial institutions with data-driven lending decisions.
+This project uses a machine learning pipeline to predict whether a loan application will be approved based on applicant details. It includes EDA, feature engineering, model training using a Random Forest classifier, and predictions on unseen test data.
 
 ---
 
@@ -44,36 +44,36 @@ New features created to improve model accuracy:
 
 ---
 
-## 🤖 Model Building
+## 🧪 Model Details
 
-- **Preprocessing**: 
-  - Missing value imputation (mean/mode)
-  - Label encoding for categorical features
-- **Model Used:** Random Forest Classifier
-- **Pipeline:** SimpleImputer → LabelEncoder → Feature Engineering → Model
-- **Train/Test Split:** 80/20
-- **Evaluation Metrics:** Accuracy, Confusion Matrix, Classification Report
+- **Algorithm**: Random Forest Classifier  
+- **Target Variable**: `Loan_Status` (Y/N)  
+- **Missing Values**: Handled using `SimpleImputer`  
+- **Categorical Encoding**: `LabelEncoder`
 
 ---
 
 ### 👨‍💼 What It Does:
+
 - Takes user input for loan application
 - Uses trained ML model to predict loan approval
 - Displays real-time results with business interpretation
 
-## 💻 Streamlit App Overview
-
-The project is deployed as an interactive Streamlit app with 3 tabs:
-
-### 🔹 Tab 1: Loan Status Prediction
-- Users fill out a loan application form
-- App returns prediction: Approved or Not Approved
-
-### 🔹 Tab 2: EDA Dashboard
-- Visualizations: Credit history vs Loan Status, Income distributions, Correlation heatmap
-
-### 🔹 Tab 3: Feature Importance
-- Bar chart showing model feature importance
-
 ---
 
+### 🛠️ Tech Stack
+
+- Python 3.x
+- Pandas, NumPy
+- Matplotlib
+- Scikit-learn
+- Joblib (for saving model and encoders)
+- Jupyter Notebook
+
+## 🙋‍♂️ About Me
+
+**Kanishka Narayan Choudhury**  
+Aspiring Data Analyst | Excel | SQL | Power BI | Python  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/kanishka-n-choudhury/)
+
+---
