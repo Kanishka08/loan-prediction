@@ -1,6 +1,6 @@
 # 🏦 Loan Approval Prediction with ML
 
-This project uses a machine learning pipeline to predict whether a loan application will be approved based on applicant details. It includes EDA, feature engineering, model training using a Random Forest classifier, and predictions on unseen test data.
+This project builds a machine learning pipeline to predict whether a loan application will be approved based on applicant details. It includes **EDA, feature engineering, evaluation of multiple ML models, and final prediction using Random Forest**.
 
 ---
 
@@ -43,21 +43,31 @@ New features created to improve model accuracy:
 | `Income_Loan_Ratio` | Total_Income divided by LoanAmount |
 
 ---
+## 🧪 Model Development
 
-## 🧪 Model Details
+- **Algorithms Evaluated:**  
+  - Logistic Regression  
+  - K-Nearest Neighbors (KNN)  
+  - Support Vector Machine (SVM)  
+  - Random Forest Classifier  
 
-- **Algorithm**: Random Forest Classifier  
-- **Target Variable**: `Loan_Status` (Y/N)  
-- **Missing Values**: Handled using `SimpleImputer`  
-- **Categorical Encoding**: `LabelEncoder`
+- **Model Selection:**  
+  After comparing performance across models, **Random Forest** was selected as the final model due to its higher accuracy and robustness.  
+
+- **Preprocessing Steps:**  
+  - Missing values handled using `SimpleImputer`  
+  - Categorical encoding with `LabelEncoder`  
+  - Model and encoders saved with `Joblib`  
 
 ---
 
-### 👨‍💼 What It Does:
+### 📈 Project Outcomes
 
-- Takes user input for loan application
-- Uses trained ML model to predict loan approval
-- Displays real-time results with business interpretation
+- Performed detailed **EDA** to identify key factors influencing loan approval  
+- Engineered new features (`Total_Income`, `Income_Loan_Ratio`) to improve prediction  
+- Evaluated multiple ML algorithms (Logistic Regression, KNN, SVM, Random Forest)  
+- Selected **Random Forest** as the final model for its superior performance  
+- Generated predictions on test data for loan approval classification
 
 ---
 
